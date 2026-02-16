@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerG Intel — Local Business Delivery Tracking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --black: #000000;
+            --green: #00FF41;
+            --dark-green: #00a82d;
+            --gray: #1a1a1a;
+            --silver: #C0C0C0;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: var(--black);
+            color: var(--green);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 1px solid var(--dark-green);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        .logo-large {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            color: var(--silver);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .hero {
+            background: var(--gray);
+            border: 2px solid var(--green);
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .hero h1 {
+            margin: 0;
+        }
+
+        .hero p {
+            color: var(--silver);
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: var(--green);
+            font-weight: bold;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--dark-green);
+            color: var(--green);
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        li::before {
+            content: "> ";
+            color: var(--green);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .feature-card {
+            background: var(--gray);
+            border: 1px solid var(--dark-green);
+            padding: 20px;
+        }
+
+        .feature-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: var(--green);
+        }
+
+        .feature-desc {
+            color: var(--silver);
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+
+        .cta-section {
+            background: var(--gray);
+            border: 2px solid var(--green);
+            padding: 40px;
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .cta-button {
+            color: var(--green);
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: 1px solid var(--green);
+            padding: 15px 30px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            background: var(--black);
+        }
+
+        .cta-button:hover {
+            background: var(--green);
+            color: var(--black);
+        }
+
+        footer {
+            margin-top: 80px;
+            padding-top: 20px;
+            border-top: 1px solid var(--dark-green);
+            text-align: center;
+            color: var(--silver);
+            font-size: 0.8rem;
+        }
+
+        footer a {
+            color: var(--silver);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: var(--green);
+        }
+
+        .command {
+            background: var(--gray);
+            padding: 15px;
+            border-left: 3px solid var(--green);
+            margin: 20px 0;
+            font-size: 0.85rem;
+        }
+
+        .ios-badge {
+            display: inline-block;
+            background: var(--silver);
+            color: var(--black);
+            padding: 3px 8px;
+            font-size: 0.7rem;
+            border-radius: 4px;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-large">INNERG INTEL</div>
+            <div class="tagline">Become intelligence. Become INNERG.</div>
+        </header>
+
+        <div class="hero">
+            <div class="command">
+                <span style="color: var(--green);">> initializing system...</span><br>
+                <span style="color: var(--green);">> loading infrastructure...</span><br>
+                <span style="color: var(--green);">> ready.</span>
+            </div>
+            <h1>Local Business Delivery Tracking</h1>
+            <p>Professional order tracking app designed for local delivery businesses</p>
+        </div>
+
+        <div class="section">
+            <h2>Core Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-title">Order Access</div>
+                    <div class="feature-desc">Secure order entry with real-time validation</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-title">Live Tracking</div>
+                    <div class="feature-desc">Real-time delivery progress updates</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-title">Estimated Time</div>
+                    <div class="feature-desc">Accurate delivery time calculations</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-title">Status History</div>
+                    <div class="feature-desc">Complete order timeline and logs</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-title">Driver Status</div>
+                    <div class="feature-desc">Optional driver availability indicator</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Technical Stack</h2>
+            <ul>
+                <li>> iOS-optimized with SwiftUI design language</li>
+                <li>> React for admin dashboard</li>
+                <li>> Node.js backend API</li>
+                <li>> SQLite database for order history</li>
+                <li>> Real-time WebSocket for live updates</li>
+                <li><span class="ios-badge">iOS v1.0</span> Mobile-first responsive design</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>User Experience</h2>
+            <p>Green and white theme for positivity and trust</p>
+            <p>White, clean layout with minimal clutter</p>
+            <p>Smooth animations for professional feel</p>
+            <p>Fast loading and responsive interface</p>
+            <p>Functional design over flashy effects</p>
+        </div>
+
+        <div class="section">
+            <h2>Business Side</h2>
+            <p>Manual order status management panel</p>
+            <p>Order lookup by order number</p>
+            <p>Delivery completion confirmation system</p>
+            <p>Secure, efficient backend validation</p>
+        </div>
+
+        <div class="cta-section">
+            <p style="margin-bottom: 20px; color: var(--silver);">Version 1.0 Scope: MVP focused on core tracking functionality</p>
+            <a href="mailto:contact@innergintel.com" class="cta-button">Request Demo</a>
+        </div>
+
+        <div class="command" style="text-align: center; margin-top: 60px;">
+            <code style="color: var(--green);">$ initialize_delivery_tracking<br>
+            > system ready.</code>
+        </div>
+
+        <footer>
+            <p>A delivery tracking system built for local businesses.</p>
+            <p style="margin-top: 10px;">
+                <a href="https://innergclaw.github.io/innerg-intel-blog/" style="color: var(--silver); text-decoration: none;">InnerG Intel Blog</a> |
+                <a href="https://discord.gg/CLAWD" style="color: var(--silver); text-decoration: none;">Discord</a>
+            </p>
+            <p style="margin-top: 20px; color: var(--dark-green);">Become intelligence. Become INNERG.</p>
+        </footer>
+    </div>
+</body>
+</html>
