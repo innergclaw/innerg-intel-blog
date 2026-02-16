@@ -49,6 +49,26 @@
             color: var(--green);
         }
 
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav a {
+            color: var(--silver);
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 5px 10px;
+            border: 1px solid var(--dark-green);
+            transition: all 0.3s ease;
+        }
+
+        .nav a:hover,
+        .nav a.active {
+            color: var(--green);
+            border-color: var(--green);
+        }
+
         h1 {
             font-size: 1.8rem;
             margin-bottom: 10px;
@@ -172,7 +192,12 @@
 <body>
     <div class="container">
         <header>
-            <a href="./index.html" class="back-link">&lt; Back to Blog</a>
+            <div class="logo">INNERG INTEL</div>
+            <div class="tagline">> Become intelligence. Become INNERG.</div>
+            <nav class="nav">
+                <a href="./index.html" class="active">Blog</a>
+                <a href="./about.html">About</a>
+            </nav>
         </header>
 
         <article>
